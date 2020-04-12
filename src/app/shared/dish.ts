@@ -7,4 +7,5 @@ export interface Dish {
   label: string;
   price: string;
   description: string;
+  comments?: any;
 }
