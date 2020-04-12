@@ -9,8 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
   dishes: Array<Dish>;
+  selectedDish: Dish;
   constructor() {
     this.dishes = dataDish;
+    this.selectedDish = dataDish[0];
   }
 
   ngOnInit(): void {}
