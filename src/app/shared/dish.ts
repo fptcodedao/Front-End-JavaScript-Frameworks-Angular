@@ -1,3 +1,4 @@
+import { Comment } from './comments';
 export interface Dish {
   id: string;
   name: string;
@@ -7,5 +8,5 @@ export interface Dish {
   label: string;
   price: string;
   description: string;
-  comments?: any;
+  comments: Comment[];
 }

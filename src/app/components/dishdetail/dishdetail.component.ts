@@ -1,6 +1,5 @@
-import { dataDish } from './../../shared/dishStore';
 import { Dish } from './../../shared/dish';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-dishdetail',
@@ -8,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dishdetail.component.scss'],
 })
 export class DishdetailComponent implements OnInit {
-  dish: Dish;
+  // tslint:disable-next-line:no-input-rename
+  @Input('dish') dish: Dish;
   constructor() {
-    this.dish = dataDish[0];
   }
 
   ngOnInit(): void {}
